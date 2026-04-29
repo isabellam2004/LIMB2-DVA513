@@ -1,0 +1,6 @@
+external/ 
+build/ 
+CMakeFiles/ 
+CMakeCache.txt 
+.vcxproj
+*.sln
