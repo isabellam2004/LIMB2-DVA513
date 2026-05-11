@@ -1,6 +1,37 @@
-external/ 
-build/ 
-CMakeFiles/ 
-CMakeCache.txt 
-.vcxproj
+# macOS / editor noise
+.DS_Store
+**/.DS_Store
+.vscode/
+
+# Build output
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.o
+*.a
+*.dylib
+*.so
+*.dll
+*.exe
+*.zip
+*.vcxproj
 *.sln
+
+# Bazel output/symlinks
+bazel-*
+
+# External dependencies must be installed by each developer, not committed.
+external/
+depthai-core/
+mediapipe/
+
+# Legacy experiments are kept locally but should not be part of the shared repo.
+camera_vision/
+
+# Current supported build flow is Bazel inside the MediaPipe workspace.
+Camera_testing/CMakeLists.txt
+
+# Keep Camera_testing/json_files committed on purpose:
+# it contains the shared patient JSON data used by the group.
