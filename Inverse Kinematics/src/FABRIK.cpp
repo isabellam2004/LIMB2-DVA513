@@ -4,9 +4,7 @@
 using namespace Eigen;
 
 
-void fabrik(std::vector<Vector3f>& joints,
-            std::vector<float>& lengths,
-            Vector3f target)
+void fabrik(std::vector<Vector3f>& joints, std::vector<float>& lengths, Vector3f target)
 {
     // -------- BACKWARD PASS -------- //
 
