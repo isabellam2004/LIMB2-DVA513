@@ -652,6 +652,18 @@ int main() {                                              // Execution start.
                             rejectHandDepthOutliers(handLandmarks3D, pWrist);
                             filteredHandLandmarks3D = handLandmarks3D;
 
+                            // For Inverse Kinematics
+                            if (session.sessionType == "Live_Tracking")
+                            {
+                                std::vector<float> floatJoints = {
+                                    pShoulder.x, pShoulder.y, pShoulder.z,
+                                    pElbow.x, pElbow.y, pElbow.z,
+                                    pWrist.x, pWrist.y, pWrist.z
+                                };
+
+                                fabrik(floatJoints)
+                            }
+
                             double curUarm = KinematicAnalyzer::calculateDistanceBetweenPoints(pShoulder, pElbow); // Segments.
                             double curFarm = KinematicAnalyzer::calculateDistanceBetweenPoints(pElbow, pWrist);
 

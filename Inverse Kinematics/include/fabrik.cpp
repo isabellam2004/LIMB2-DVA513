@@ -1,11 +1,28 @@
+#include "fabrik.h"
 #include <iostream>
-#include <Eigen/Dense>
 
 using namespace Eigen;
 
-
-void fabrik(std::vector<Vector3f>& joints, std::vector<float>& lengths, Vector3f target)
+void create_joints_list(std::vector<Vector3f>& jointsList, std::vector<float>& flatCoords)
 {
+    for(size_t i = 0; i < flatCoords.size(); i += 3)
+    {
+        jointsList.push_back(Vector3f(flatCoords[i], flatCoords[i + 1], flatCoords[i + 2]));
+    }
+}
+
+void fabrik(std::vector<float>& flatCoords, std::vector<float>& lengths, Vector3f target)
+{
+    // Check 3D coordinates
+    if (flatCoords.size() % 3 != 0)
+    {
+        std::cout << "Wrong coordinate size!";
+        return;
+    }
+
+    std::vector<Vector3f> joints;
+    create_joints_list(joints, flatCoords);
+
     // -------- BACKWARD PASS -------- //
 
     joints.back() = target; // Put the last joint (the hand) onto target
@@ -27,37 +44,9 @@ void fabrik(std::vector<Vector3f>& joints, std::vector<float>& lengths, Vector3f
         Vector3f dir = (joints[i] - joints[i - 1]).normalized();    // The direction from the previous joint to the current joint
         joints[i] = joints[i - 1] + dir * lengths[i - 1];   // Place the joint right according to the segment length
     }
-}
 
-int main()
-{
-    std::vector<Vector3f> joints;   // The arms joints
 
-    // Create the joints:
-    Vector3f shoulder(0, 0, 0);
-    Vector3f elbow(0, 0, 30);
-    Vector3f hand(0, 0, 60);
-
-    // Add the joints to joints:
-    joints.push_back(shoulder);
-    joints.push_back(elbow);
-    joints.push_back(hand);
-
-    std::vector<float> lengths; // Segment lengths
-
-    // Create the segment lengths:
-    float shoulderToElbow(50);
-    float elbowToHand(30);
-
-    // Add the lengths to lengths:
-    lengths.push_back(shoulderToElbow);
-    lengths.push_back(elbowToHand);
-
-    Vector3f target(45, 19, 30);    // The target
-
-    fabrik(joints, lengths, target);
-
-    // Test
+    // -------- TEST --------
     std::cout << "Joint positions:\n";
 
     for(auto& joint : joints)
@@ -68,12 +57,4 @@ int main()
             << ", z: " << joint.z()
             << std::endl;
     }
-
-
-    // std::cout << "Start OK\n";
-
-    // float error = (hand - target).norm();
-    // std::cout << "Error: " << error << std::endl;
-
-    return 0;
 }
