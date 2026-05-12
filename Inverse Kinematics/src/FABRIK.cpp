@@ -48,14 +48,14 @@ int main()
     std::vector<float> lengths; // Segment lengths
 
     // Create the segment lengths:
-    float shoulderToElbow(30);
+    float shoulderToElbow(50);
     float elbowToHand(30);
 
     // Add the lengths to lengths:
     lengths.push_back(shoulderToElbow);
     lengths.push_back(elbowToHand);
 
-    Vector3f target(40, 20, 30);    // The target
+    Vector3f target(45, 19, 30);    // The target
 
     fabrik(joints, lengths, target);
 
