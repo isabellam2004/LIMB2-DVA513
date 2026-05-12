@@ -12,4 +12,3 @@ __Team members:__
 - Isabella Minergård
 - Omar Zaleh
 - Sara Zrno
-- Sara Zrno
