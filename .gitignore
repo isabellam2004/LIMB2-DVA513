@@ -35,3 +35,5 @@ Camera_testing/CMakeLists.txt
 
 # Keep Camera_testing/json_files committed on purpose:
 # it contains the shared patient JSON data used by the group.
+
+libs/
