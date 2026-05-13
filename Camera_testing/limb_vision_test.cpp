@@ -653,15 +653,62 @@ int main() {                                              // Execution start.
                             filteredHandLandmarks3D = handLandmarks3D;
 
                             // For Inverse Kinematics
-                            // if (session.sessionType == "Live_Tracking")
+                            // if (session.sessionType == "Live_Tracking" && hasFilteredArm && !filteredHandLandmarks3D.empty())
                             // {
-                            //     std::vector<float> floatJoints = {
-                            //         pShoulder.x, pShoulder.y, pShoulder.z,
-                            //         pElbow.x, pElbow.y, pElbow.z,
-                            //         pWrist.x, pWrist.y, pWrist.z
+                            //     // Coordinates for the arm joints: shoulder, elbow and wrist
+                            //     std::vector<float> flatArmCoords = {
+                            //         filteredShoulder.x, filteredShoulder.y, filteredShoulder.z,
+                            //         filteredElbow.x, filteredElbow.y, filteredElbow.z,
+                            //         filteredWrist.x, filteredWrist.y, filteredWrist.z
                             //     };
+                                
+                            //     // Coordinates for the finger joints:
+                            //     std::vector<float> flatHandCoords;
+                            //     for(const auto& pt : filteredHandLandmarks3D)
+                            //     {
+                            //         flatHandCoords.push_back(pt.x);
+                            //         flatHandCoords.push_back(pt.y);
+                            //         flatHandCoords.push_back(pt.z);
+                            //     }
 
-                            //     fabrik(floatJoints)
+                            //     std::vector<float> flatTargetsCoords;
+                            //     // Target for the arm:
+                            //     flatTargetsCoords.push_back(filteredWrist.x);
+                            //     flatTargetsCoords.push_back(filteredWrist.y);
+                            //     flatTargetsCoords.push_back(filteredWrist.z);
+                            //     // Targets for the finger tips:
+                            //     int fingerTipIndices[] = {4, 8, 12, 16, 20};
+                            //     for(int idx : fingerTipIndices)
+                            //     {
+                            //         flatTargetsCoords.push_back(filteredHandLandmarks3D[idx].x);
+                            //         flatTargetsCoords.push_back(filteredHandLandmarks3D[idx].y);
+                            //         flatTargetsCoords.push_back(filteredHandLandmarks3D[idx].z);
+                            //     }
+                            
+                            //     auto result = fabrik(flatArmCoords, flatHandCoords, flatTargetCoords);
+
+                            //     // Print the joint coordinates:
+                            //     std::cout << "Joint positions:\n";
+
+                            //     std::cout << "Arm:\n";
+                            //     for(auto& joint : result.first)
+                            //     {
+                            //         std::cout
+                            //             << joint.x()
+                            //             << ", " << joint.y()
+                            //             << ", " << joint.z()
+                            //             << std::endl;
+                            //     }
+
+                            //     std::cout << "Hand:\n";
+                            //     for(auto& joint : result.second)
+                            //     {
+                            //         std::cout
+                            //             << joint.x()
+                            //             << ", " << joint.y()
+                            //             << ", " << joint.z()
+                            //             << std::endl;
+                            //     }
                             // }
 
                             double curUarm = KinematicAnalyzer::calculateDistanceBetweenPoints(pShoulder, pElbow); // Segments.
