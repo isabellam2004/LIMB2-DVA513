@@ -1,0 +1,318 @@
+{
+  "biometrics": {
+    "upper_arm_length_mm": 248.4,
+    "forearm_length_mm": 221.7,
+    "shoulder_width_mm": null
+  },
+  "recordings": [
+    {
+      "recording": "move2_slow",
+      "joints": {
+        "sh_flex": {
+          "max_angle": 56.8672,
+          "start_angle": 22.7864,
+          "smoothness": 0.1849,
+          "time_to_peak_min": 2.531,
+          "time_to_peak_max": 7.46
+        },
+        "sh_abd": {
+          "max_angle": 96.1278,
+          "start_angle": 88.5113,
+          "smoothness": 0.1849,
+          "time_to_peak_min": 0.04,
+          "time_to_peak_max": 4.42
+        },
+        "el_flex": {
+          "max_angle": 176.921,
+          "start_angle": 156.181,
+          "smoothness": 0.1849,
+          "time_to_peak_min": 0.54,
+          "time_to_peak_max": 7.214
+        },
+        "wr_pron": {
+          "max_angle": 141.527,
+          "start_angle": 128.9351,
+          "smoothness": 0.1849,
+          "time_to_peak_min": 1.069,
+          "time_to_peak_max": 7.253
+        },
+        "thumb_MCP": {
+          "max_angle": 59.0283,
+          "start_angle": 19.4026,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.159,
+          "time_to_peak_max": 7.568
+        },
+        "thumb_PIP": {
+          "max_angle": 59.3661,
+          "start_angle": 37.6182,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.435,
+          "time_to_peak_max": 5.926
+        },
+        "index_MCP": {
+          "max_angle": 46.2803,
+          "start_angle": 27.0154,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.343,
+          "time_to_peak_max": 5.648
+        },
+        "index_PIP": {
+          "max_angle": 74.0417,
+          "start_angle": 3.7651,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.593,
+          "time_to_peak_max": 5.411
+        },
+        "middle_MCP": {
+          "max_angle": 32.1988,
+          "start_angle": 10.6198,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.263,
+          "time_to_peak_max": 3.989
+        },
+        "middle_PIP": {
+          "max_angle": 118.763,
+          "start_angle": 9.0312,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.95,
+          "time_to_peak_max": 5.095
+        },
+        "ring_MCP": {
+          "max_angle": 32.5262,
+          "start_angle": 15.2833,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.277,
+          "time_to_peak_max": 7.947
+        },
+        "ring_PIP": {
+          "max_angle": 148.6779,
+          "start_angle": 10.8707,
+          "smoothness": 0.0,
+          "time_to_peak_min": 1.9,
+          "time_to_peak_max": 4.423
+        },
+        "pinky_MCP": {
+          "max_angle": 82.0985,
+          "start_angle": 66.8552,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.303,
+          "time_to_peak_max": 7.354
+        },
+        "pinky_PIP": {
+          "max_angle": 113.2454,
+          "start_angle": 57.8705,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.513,
+          "time_to_peak_max": 7.354
+        }
+      }
+    },
+    {
+      "recording": "move2_med",
+      "joints": {
+        "sh_flex": {
+          "max_angle": 57.7627,
+          "start_angle": 39.2421,
+          "smoothness": 0.0,
+          "time_to_peak_min": 2.531,
+          "time_to_peak_max": 7.46
+        },
+        "sh_abd": {
+          "max_angle": 93.8381,
+          "start_angle": 80.4386,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.04,
+          "time_to_peak_max": 4.42
+        },
+        "el_flex": {
+          "max_angle": 178.169,
+          "start_angle": 142.575,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.54,
+          "time_to_peak_max": 7.214
+        },
+        "wr_pron": {
+          "max_angle": 150.5337,
+          "start_angle": 122.5874,
+          "smoothness": 0.0,
+          "time_to_peak_min": 1.069,
+          "time_to_peak_max": 7.253
+        },
+        "thumb_MCP": {
+          "max_angle": 61.4582,
+          "start_angle": 12.2382,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.159,
+          "time_to_peak_max": 7.568
+        },
+        "thumb_PIP": {
+          "max_angle": 66.0413,
+          "start_angle": 23.5182,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.435,
+          "time_to_peak_max": 5.926
+        },
+        "index_MCP": {
+          "max_angle": 63.8283,
+          "start_angle": 25.9276,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.343,
+          "time_to_peak_max": 5.648
+        },
+        "index_PIP": {
+          "max_angle": 84.595,
+          "start_angle": 28.0448,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.593,
+          "time_to_peak_max": 5.411
+        },
+        "middle_MCP": {
+          "max_angle": 55.2342,
+          "start_angle": 11.273,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.263,
+          "time_to_peak_max": 3.989
+        },
+        "middle_PIP": {
+          "max_angle": 145.3959,
+          "start_angle": 3.846,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.95,
+          "time_to_peak_max": 5.095
+        },
+        "ring_MCP": {
+          "max_angle": 48.9978,
+          "start_angle": 8.6978,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.277,
+          "time_to_peak_max": 7.947
+        },
+        "ring_PIP": {
+          "max_angle": 71.421,
+          "start_angle": 11.675,
+          "smoothness": 0.0,
+          "time_to_peak_min": 1.9,
+          "time_to_peak_max": 4.423
+        },
+        "pinky_MCP": {
+          "max_angle": 160.18,
+          "start_angle": 13.2579,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.303,
+          "time_to_peak_max": 7.354
+        },
+        "pinky_PIP": {
+          "max_angle": 167.2486,
+          "start_angle": 12.8926,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.513,
+          "time_to_peak_max": 7.354
+        }
+      }
+    },
+    {
+      "recording": "move2_fast",
+      "joints": {
+        "sh_flex": {
+          "max_angle": 53.2052,
+          "start_angle": 25.709,
+          "smoothness": 0.0122,
+          "time_to_peak_min": 2.531,
+          "time_to_peak_max": 7.46
+        },
+        "sh_abd": {
+          "max_angle": 90.5174,
+          "start_angle": 83.0124,
+          "smoothness": 0.0122,
+          "time_to_peak_min": 0.04,
+          "time_to_peak_max": 4.42
+        },
+        "el_flex": {
+          "max_angle": 175.651,
+          "start_angle": 152.618,
+          "smoothness": 0.0122,
+          "time_to_peak_min": 0.54,
+          "time_to_peak_max": 7.214
+        },
+        "wr_pron": {
+          "max_angle": 149.8888,
+          "start_angle": 137.0556,
+          "smoothness": 0.0122,
+          "time_to_peak_min": 1.069,
+          "time_to_peak_max": 7.253
+        },
+        "thumb_MCP": {
+          "max_angle": 59.7192,
+          "start_angle": 29.1072,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.159,
+          "time_to_peak_max": 7.568
+        },
+        "thumb_PIP": {
+          "max_angle": 139.4304,
+          "start_angle": 20.8509,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.435,
+          "time_to_peak_max": 5.926
+        },
+        "index_MCP": {
+          "max_angle": 45.3431,
+          "start_angle": 31.484,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.343,
+          "time_to_peak_max": 5.648
+        },
+        "index_PIP": {
+          "max_angle": 66.1379,
+          "start_angle": 27.932,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.593,
+          "time_to_peak_max": 5.411
+        },
+        "middle_MCP": {
+          "max_angle": 36.6213,
+          "start_angle": 13.958,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.263,
+          "time_to_peak_max": 3.989
+        },
+        "middle_PIP": {
+          "max_angle": 53.9348,
+          "start_angle": 3.9442,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.95,
+          "time_to_peak_max": 5.095
+        },
+        "ring_MCP": {
+          "max_angle": 47.975,
+          "start_angle": 1.9678,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.277,
+          "time_to_peak_max": 7.947
+        },
+        "ring_PIP": {
+          "max_angle": 64.6523,
+          "start_angle": 14.0332,
+          "smoothness": 0.0,
+          "time_to_peak_min": 1.9,
+          "time_to_peak_max": 4.423
+        },
+        "pinky_MCP": {
+          "max_angle": 122.2039,
+          "start_angle": 6.7596,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.303,
+          "time_to_peak_max": 7.354
+        },
+        "pinky_PIP": {
+          "max_angle": 166.0729,
+          "start_angle": 21.7141,
+          "smoothness": 0.0,
+          "time_to_peak_min": 0.513,
+          "time_to_peak_max": 7.354
+        }
+      }
+    }
+  ]
+}
