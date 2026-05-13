@@ -8,7 +8,7 @@ Then you should create a build folder and go into it:<br>
 `mkdir build && cd build`
 
 Run these commands:<br>
-`cmake ..`<br
+`cmake ..`<br>
 `cmake --build . --config Release`
 
 Then run the app:<br>
